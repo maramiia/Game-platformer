@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A68AF54-32D0-428C-8C0C-655943BAC334}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Game_platformer5</RootNamespace>
+    <AssemblyName>Game-platformer5</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\DNS\Desktop\Лосева Мария Владимировна\build\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F445EE77680F88527563FA8F5A522DD89959B08A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Game-platformer5_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Block.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="CreateGame.cs" />
+    <Compile Include="End.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="End.Designer.cs">
+      <DependentUpon>End.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enemy.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Learning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Learning.Designer.cs">
+      <DependentUpon>Learning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level2.Designer.cs">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level3.Designer.cs">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level4.Designer.cs">
+      <DependentUpon>Level4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level5.Designer.cs">
+      <DependentUpon>Level5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingScreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreeForm.Designer.cs">
+      <DependentUpon>LoadingScreeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View.cs" />
+    <EmbeddedResource Include="End.resx">
+      <DependentUpon>End.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Learning.resx">
+      <DependentUpon>Learning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level2.resx">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level3.resx">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level4.resx">
+      <DependentUpon>Level4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level5.resx">
+      <DependentUpon>Level5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreeForm.resx">
+      <DependentUpon>LoadingScreeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Game-platformer5_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blockExample.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\blockExample.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\load_image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\block2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\portal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Obelisk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\block3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\block4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\block5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\hell-beast-idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\spr_portal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\spr_portal1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\health-medicine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\load_image2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\load_image3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\load_image4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\background2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\block6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\death.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Fire+Sparks.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\background3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\ghost-idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\demon-idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\fire-skull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\pinpng.com-health-bar-png-768834.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\ButtonStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\ButtonStartGame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\802e203476e007affca8e01c8bc502f0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Space.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\SpaceWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\AWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\DWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\background4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\background5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\block7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\background5PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\HandEnemy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\wizard idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\b3cf7576237c145dc2247cb3c74b7f6a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\6d24e9e5127a2b039627afff43a35afe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\angle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\levaya_knopka_myshi_t2paox9a1qas_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\EscWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\01 A Scholar%27s Tale.mp3" />
+    <Content Include="Resources\2- Mazmorra.wav" />
+    <Content Include="Resources\3- Boss Fight.wav" />
+    <Content Include="Resources\6d24e9e5127a2b039627afff43a35afe.jpg" />
+    <Content Include="Resources\802e203476e007affca8e01c8bc502f0.jpg" />
+    <Content Include="Resources\A.png" />
+    <Content Include="Resources\angle.jpg" />
+    <Content Include="Resources\AWhite.png" />
+    <Content Include="Resources\b3cf7576237c145dc2247cb3c74b7f6a.jpg" />
+    <Content Include="Resources\background1.png" />
+    <Content Include="Resources\background2.png" />
+    <Content Include="Resources\background3.png" />
+    <Content Include="Resources\background4.png" />
+    <Content Include="Resources\background5.jpg" />
+    <Content Include="Resources\background5PNG.png" />
+    <Content Include="Resources\block long.png" />
+    <Content Include="Resources\block2.jpg" />
+    <Content Include="Resources\block3.jpg" />
+    <Content Include="Resources\block4.jpg" />
+    <Content Include="Resources\block5.jpg" />
+    <Content Include="Resources\block6.jpg" />
+    <Content Include="Resources\block7.jpg" />
+    <Content Include="Resources\blockOblique.png" />
+    <Content Include="Resources\ButtonStart.png" />
+    <Content Include="Resources\ButtonStartGame.jpg" />
+    <Content Include="Resources\death.png" />
+    <Content Include="Resources\demon-attack-no-breath.png" />
+    <Content Include="Resources\demon-idle.png" />
+    <Content Include="Resources\door with hole.png" />
+    <Content Include="Resources\DWhite.png" />
+    <Content Include="Resources\EscWhite.png" />
+    <Content Include="Resources\Fire+Sparks.gif" />
+    <Content Include="Resources\fire-skull.png" />
+    <Content Include="Resources\FlyingObelisk_no_lightnings_no_letter.png" />
+    <Content Include="Resources\ghost-idle.png" />
+    <Content Include="Resources\ghost-shriek.png" />
+    <Content Include="Resources\gothic-castle-preview.png" />
+    <Content Include="Resources\gothic-castle-tileset-one-platform.png" />
+    <Content Include="Resources\gothic-hero-attack-left.png" />
+    <Content Include="Resources\gothic-hero-attack.png" />
+    <Content Include="Resources\gothic-hero-idle-left.png" />
+    <Content Include="Resources\gothic-hero-idle.png" />
+    <Content Include="Resources\gothic-hero-jump-left.png" />
+    <Content Include="Resources\gothic-hero-jump.png" />
+    <Content Include="Resources\gothic-hero-run-left.png" />
+    <Content Include="Resources\gothic-hero-run.png" />
+    <Content Include="Resources\HandEnemy.png" />
+    <Content Include="Resources\health — копия.png" />
+    <Content Include="Resources\health-medicine.jpg" />
+    <Content Include="Resources\health.png" />
+    <Content Include="Resources\hell-beast-burn.gif" />
+    <Content Include="Resources\hell-beast-burn.png" />
+    <Content Include="Resources\hell-beast-idle.png" />
+    <Content Include="Resources\hell_beast_idle.gif" />
+    <Content Include="Resources\hUmHCI6PAkU.jpg" />
+    <Content Include="Resources\Idle.png" />
+    <Content Include="Resources\image.jpg" />
+    <Content Include="Resources\levaya_knopka_myshi_t2paox9a1qas_128.png" />
+    <Content Include="Resources\load_image1.jpg" />
+    <Content Include="Resources\load_image2.jpg" />
+    <Content Include="Resources\load_image3.jpg" />
+    <Content Include="Resources\load_image4.jpg" />
+    <Content Include="Resources\longblock1.png" />
+    <Content Include="Resources\longblock2.png" />
+    <Content Include="Resources\longStoneBlockpng.png" />
+    <Content Include="Resources\night.png" />
+    <Content Include="Resources\Obelisk.gif" />
+    <Content Include="Resources\pinpng.com-health-bar-png-768834.png" />
+    <Content Include="Resources\portal.png" />
+    <Content Include="Resources\short stone block.png" />
+    <Content Include="Resources\Space.png" />
+    <Content Include="Resources\SpaceWhite.png" />
+    <Content Include="Resources\spr_portal.png" />
+    <Content Include="Resources\spr_portal1.jpg" />
+    <Content Include="Resources\spr_portal_strip8.png" />
+    <Content Include="Resources\very short stone block.png" />
+    <Content Include="Resources\wizard attack.png" />
+    <Content Include="Resources\wizard idle.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
